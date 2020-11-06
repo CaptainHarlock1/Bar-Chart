@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #32465f;
+}
+
+svg {
+    background-color: yellow;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    color: white;
+    margin: 15;
+}
+
+.bar{
+    fill: #173955;
+    fill-opacity: 0.8;
+}
