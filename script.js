@@ -1,7 +1,7 @@
-const dataset = [];
-const datasetobj = [];
-const w = 350;
-const h = 300;
+let dataset = [];
+let datasetobj = [];
+const w = 550;
+const h = 450;
 const padding = 30;
 
 const xScale = d3.scaleLinear()
@@ -25,6 +25,7 @@ const canvas = d3.select("body")
                 .append("svg")
                 .attr("width", w)
                 .attr("height", h);
+                
 
 
 
@@ -52,18 +53,28 @@ canvas.selectAll("rect")
       .attr("height", (d)=> yScale(d[1])-padding)
       .attr("class", "bar");
 
-const req = new XMLHttpRequest();
-req.open("GET", 'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json', true );
-req.send();
-req.onload = function(){
-     const json = JSON.parse(req.responseText);
+   body.append("h2")
+      .text("It working");
 
-//      document.getElementById('test').innerText = padding;
-//      console.log(json.data);
-     datasetobj.push(json.data);
 
-};
-console.log(datasetobj);
+
+
+// const req = new XMLHttpRequest();
+// req.open("GET", 'https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json', true );
+// req.send();
+// req.onload = function(){
+//      const json = JSON.parse(req.responseText);
+     
+//      datasetobj.push(json.data);
+//      dataset = datasetobj[0].map(d=>d);
+//      console.log(dataset);
+//      console.log(typeof(dataset));
+
+// //      document.getElementById('test').innerText = dataset;
+
+// };
+
+
 
 
 
