@@ -7,20 +7,25 @@ body {
 }
 
 svg {
-    background-color: rgb(46, 236, 46);
+    background-color: none;
+    color: white;
 }
 
 .title{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: none;
-    color: white;
-    margin: 15;
+    background-color: none; */
+    fill: white;
+    font-size: 21px;
+    text-decoration: underline;
+    /* margin: 15; */
 }
 
 .bar{
-    fill: #173955;
+    fill: #f3f6f8;
     fill-opacity: 0.8;
 }
+
+
