@@ -28,4 +28,30 @@ svg {
     fill-opacity: 0.8;
 }
 
+.bar:hover{
+    fill: rgba(84, 154, 235, 0.329);
+    fill-opacity: 0.3;
+}
+
+/* .tooltip{
+    position: absolute;
+    left: 28vw;;
+    top: 10vh;
+    z-index: -1;
+    background-color: yellowgreen;
+    color: white;
+    width: 18vw;
+    height: 10vh;
+    padding: 1vw;
+} */
+
+.tooltip{
+    color: white;
+    font-family: fantasy;
+}
+
+
+
+
+
 
